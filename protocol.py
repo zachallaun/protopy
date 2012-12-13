@@ -59,6 +59,11 @@ def defprotocol(name, fns):
     return Protocol(name, map(name_and_arity, fns))
 
 
+
+
+
+# examples
+
 ICounted = defprotocol("ICounted", ["count/1"])
 count = ICounted.dispatch_for("count")
 
